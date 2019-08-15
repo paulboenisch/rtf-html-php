@@ -11,7 +11,7 @@ Include the file rtf-html-php.php somewhere in your project. Then do this:
 
     $reader = new RtfReader();
     $rtf = file_get_contents("test.rtf"); // or use a string
-    $result = $reader->Parse($rtf);
+    $result = $reader->parse($rtf);
     
 The parser will return TRUE if the RTF was parsed successfully, or FALSE if the RTF was malformed.
 
@@ -22,7 +22,7 @@ If you’d like to see what the parser read (for debug purposes), then call this
 To convert the parser’s parse tree to HTML, call this (but only if the RTF was successfully parsed):
 
     $formatter = new RtfHtml();
-    echo $formatter->Format($reader->root);
+    echo $formatter->format($reader->root);
 
 For enhanced compatibility the default character encoding of the converted RTF unicode characters is set to `HTML-ENTITIES`. To change the default encoding, you can initialize the RtfHtml object with the desired encoding supported by `mb_list_encodings()`: ex. `UTF-8`
 

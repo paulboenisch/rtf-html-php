@@ -1,5 +1,5 @@
 {
-    "name": "henck/rtf-to-html",
+    "name": "paulboenisch/rtf-to-html",
     "description": "RTF to HTML converter in PHP",
     "keywords": ["rtf", "converter"],
     "type": "library",
@@ -8,10 +8,14 @@
         {
             "name": "Alexander van Oostenrijk",
             "email": "alex.vanoostenrijk@gmail.com"
+        },
+        {
+            "name": "Paul Bönisch",
+            "email": "boenisch83@gmail.com"
         }
     ],
     "require": {},
     "autoload": {
-        "classmap": ["rtf-html-php.php"]
+        "psr-0": { "PaulBoenisch\\RtfToHtml": "src" }
     }
 }
