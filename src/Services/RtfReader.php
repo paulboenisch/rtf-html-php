@@ -6,6 +6,8 @@
  * Time: 18:08
  */
 
+namespace PaulBoenisch\RtfToHtml\Services;
+
 use PaulBoenisch\RtfToHtml\Model\RtfControlSymbol;
 use PaulBoenisch\RtfToHtml\Model\RtfControlWord;
 use PaulBoenisch\RtfToHtml\Model\RtfGroup;

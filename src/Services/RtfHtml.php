@@ -6,9 +6,15 @@
  * Time: 18:03
  */
 
-namespace PaulBoenisch\RtfToHtml\Model;
+namespace PaulBoenisch\RtfToHtml\Services;
 
-use RtfReader;
+use PaulBoenisch\RtfToHtml\Model\RtfControlSymbol;
+use PaulBoenisch\RtfToHtml\Model\RtfControlWord;
+use PaulBoenisch\RtfToHtml\Model\RtfFont;
+use PaulBoenisch\RtfToHtml\Model\RtfGroup;
+use PaulBoenisch\RtfToHtml\Model\RtfImage;
+use PaulBoenisch\RtfToHtml\Model\RtfState;
+use PaulBoenisch\RtfToHtml\Model\RtfText;
 
 
 /**
