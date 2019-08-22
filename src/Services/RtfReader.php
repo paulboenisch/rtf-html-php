@@ -262,7 +262,7 @@ class RtfReader {
 		if($this->group == null) {
 			$err = "parse error occured";
 			trigger_error($err);
-			throw new Exception($err);
+			throw new \Exception($err);
 		}
 
 		array_push($this->group->children, $rtftext);
