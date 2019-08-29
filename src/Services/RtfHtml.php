@@ -225,6 +225,9 @@ class RtfHtml {
 	}
 
 	protected function processGroup( $group ) {
+		if(empty($group)){
+			return;
+		}
 		// Can we ignore this group?
 		switch ( $group->getType() ) {
 			case "fonttbl": // Extract Font table
